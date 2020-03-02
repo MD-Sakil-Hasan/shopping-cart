@@ -126,22 +126,22 @@
          return quantityNumber;
       }
       function priceSet(id,pp,product){
-         const mobileQuantity = document.getElementById(id).value;
-         const mobileQuantityNumber = parseFloat(mobileQuantity);
-         document.getElementById(pp).innerText =mobileQuantityNumber*product;
+         const quantity = document.getElementById(id).value;
+         const quantityNumber = parseFloat(quantity);
+         document.getElementById(pp).innerText =quantityNumber*product;
       }
 
       function plsBtn(id){
-         const mobileQuantity = document.getElementById(id).value;
-         const mobileQuantityNumber = parseFloat(mobileQuantity);
-         const totalQuantity = mobileQuantityNumber+1;
+         const quantity = document.getElementById(id).value;
+         const quantityNumber = parseFloat(quantity);
+         const totalQuantity = quantityNumber+1;
          document.getElementById(id).value = totalQuantity;
       }
       function mnsBtn(id){
-         const mobileQuantity = document.getElementById(id).value;
-         const mobileQuantityNumber = parseFloat(mobileQuantity);
-         if(mobileQuantityNumber>1){
-            const totalQuantity = mobileQuantityNumber-1;
+         const quantity = document.getElementById(id).value;
+         const quantityNumber = parseFloat(quantity);
+         if(quantityNumber>1){
+            const totalQuantity = quantityNumber-1;
             document.getElementById(id).value = totalQuantity;
          }
       }
